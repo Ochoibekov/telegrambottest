@@ -32,7 +32,7 @@ def send_text(message):
         bot.send_message(message.chat.id, reply_text)
         app_name = message.text.lower()
         application = open('applicants.txt','a+')
-        application.write(app_name + '\n')
+        application.write(app_name + "\n")
         application.close()
     else:
         simple_text=message.text[:3]+' ' + message.text.lower()
